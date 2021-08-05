@@ -285,6 +285,7 @@ header {
   margin-bottom: 10px;
 }
 .section-title-item-text {
+  margin-bottom: 16px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -308,19 +309,21 @@ header {
   margin-right: -30px;
   flex-wrap: wrap;
 }
+
 .social-icons {
-  padding: 16px 32px 0px 32px;
-}
-.social-icons > ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.social-icons li:not(:last-child) {
+  margin-right: 8px;
 }
 .social-icon {
   display: flex;
   align-items: center;
   fill: rgba(175, 177, 184, 1);
   padding: 12px 12px;
+  list-style: none;
 }
 .social-icon:hover {
   background-color: var(--accent-color);
@@ -368,12 +371,11 @@ header {
 }
 footer {
   background-color: #2f303a;
+  padding: 60px 0px;
 }
 
 /* footer */
 footer .conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
   align-items: flex-start;
 }
 .conteiner .logo-two {
@@ -442,11 +444,20 @@ footer .conteiner {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.filter-button.current-btn {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .filter-button:focus,
 .filter-button:hover {
   background: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-item {
@@ -490,6 +501,15 @@ footer .conteiner {
 
 .projects.list {
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.projects.list a {
+  display: block;
+}
+.projects.list a:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects.list li {
   border: 1px solid #eee;
@@ -504,10 +524,6 @@ footer .conteiner {
   margin-bottom: 4px;
 }
 
-.projects.list {
-  margin-top: -30px;
-  margin-left: -30px;
-}
 img {
   display: block;
   max-width: 100%;
