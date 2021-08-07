@@ -211,7 +211,7 @@ header {
   color: var(--ptimary-text-color);
 }
 /* Benefits */
-.section.benefits .conteiner {
+.section.benefits {
   padding-top: 94px;
   padding-bottom: 94px;
 }
